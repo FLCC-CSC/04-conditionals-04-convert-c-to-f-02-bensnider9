@@ -19,18 +19,16 @@ print('')
 print('  1. Convert from Celsius to Fahrenheit')
 print('  2. Convert from Fahrenheit to Celsius')
 print('')
-answer = int(input('Please choose from the above menu:'))
-num = float(input('Enter a temperature to convert:'))
-temp_f = num * 9/5 + 32
-temp_c = (num - 32) * 5/9
-if answer == (1):
-    print('')
-    print(f'{num} degrees Celsius is {temp_f:.1f} degrees Fahrenheit.')
+
+answer = int(input('Please choose from the above menu: '))
+num = float(input('Enter a temperature to convert: '))
+
+if answer == 1:
+    temp_f = num * 9/5 + 32
+    print(f'{num:.1f} degrees Celsius is {temp_f:.1f} degrees Fahrenheit.')
 else:
-    print('')
-    print(f'{num} degrees Fahrenheit is {temp_c:.1f} degrees Celsius')
-
-
+    temp_c = (num - 32) * 5/9
+    print(f'{num:.1f} degrees Fahrenheit is {temp_c:.1f} degrees Celsius.')
 
 
 
