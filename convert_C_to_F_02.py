@@ -25,10 +25,10 @@ temp_f = num * 9/5 + 32
 temp_c = (num - 32) * 5/9
 if answer == (1):
     print('')
-    print(f'{num} degrees Celsius is {temp_f} degrees Fahrenheit.')
+    print(f'{num} degrees Celsius is {temp_f:.1f} degrees Fahrenheit.')
 else:
     print('')
-    print(f'{num} degrees Fahrenheit is {temp_c} degrees Celsius')
+    print(f'{num} degrees Fahrenheit is {temp_c:.1f} degrees Celsius')
 
 
 
